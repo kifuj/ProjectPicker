@@ -1,0 +1,95 @@
+:root {
+    /* Couleurs */
+    --color-primary: #6C5CE7;
+    --color-accent: #FD7E14;
+    --color-bg-light: #F8F9FA;
+    --color-text-dark: #2D3436;
+
+    /* Espacements */
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 20px;
+
+    /* Bordures */
+    --radius-md: 12px;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    /* Style lien */
+    --list-style: none
+}
+/* Boutons réutilisables */
+.btn {
+    padding: 12px 24px;
+    border-radius: var(--radius-md);
+    /* ... styles communs ... */
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+}
+
+/* Cartes réutilisables */
+.card {
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    /* ... */
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 100%;
+}
+
+.main-list {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    list-style: var(--list-style);
+    
+}
+
+.link {
+   /* RESET */
+   text-decoration: none;
+   line-height: 1;
+   
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 5px 5px;
+   overflow: hidden;
+   color: #333;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
+}
+
+.link::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 2px));
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(60deg, var(--color-accent) 0%, var(--color-primary) 100%);
+   transition: transform .25s ease-out;
+}
+
+.link:hover { 
+   color: #fff; 
+}
+.link:hover::before {
+   transform: translateY(0);
+   transition: transform .25s ease-out;
+}
