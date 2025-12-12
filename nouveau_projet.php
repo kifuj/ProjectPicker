@@ -1,5 +1,6 @@
 <?php
 include 'asset/header.php'; 
+include 'asset/footer.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
