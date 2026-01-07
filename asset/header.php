@@ -9,7 +9,7 @@
         <ul class="main-list">
             <li><a href="index.php" class="link" >Accueil</a></li>
             <li><a href="nouveau_projet.php" class="link">Proposer un projet</a></li>
-            <li><a href="mes_projets.php" class="link">Mes projets</a></li>
+            <li><a href="mes_projet.php" class="link">Mes projets</a></li>
             <li><a href="connexion.php" class="link">Connexion</a></li>
         </ul>
     </nav>
