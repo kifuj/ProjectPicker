@@ -23,11 +23,25 @@ body {
     /* ... styles communs ... */
 }
 
+p {
+    color: rgb(146, 144, 144);
+}
+
 .btn-primary {
     background-color: var(--color-primary);
     color: white;
     border-radius: 5px;
     padding: 7px;
+}
+
+.white-link:visited {
+    color: white;
+}
+
+.btn-accent {
+    background-color: var(--color-accent);
+    border: none;
+    border-radius: var(--radius-md);
 }
 
 .btn-secondary {
@@ -62,6 +76,7 @@ body {
     font-size:14px;
     color:#777;
     background-color: #fff; 
+    position: sticky bottom ;
 }
 
 .main-list {
@@ -111,6 +126,24 @@ body {
 .container{
     display: flex;
     justify-content: center;
+}
+
+.Con-Mar {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.Con-Left {
+    justify-content: left;
+}
+
+.Con-Rig {
+    justify-content: right;
 }
 
 .Con-form{
@@ -205,3 +238,84 @@ body {
 .btn-connect:hover{
     background:#5a3ee0;
 }
+
+.link-reset {
+    text-decoration: none;
+    line-height: 1;
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.carte {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carte-titre {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 4px;
+}
+
+.carte-info {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0 0 10px;
+}
+
+
+.carte-description {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+.carte-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.carte-votes {
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-bg-light);
+  background: var(--color-accent);
+  cursor: pointer;
+}
+
+.carte-details {
+  border: none;
+  border-radius: 999px;
+  padding: 6px 18px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #4f46e5;
+  cursor: pointer;
+}
+
+.carte-votes:hover,
+.carte-details:hover {
+  opacity: 0.9;
+}
+
+
+
